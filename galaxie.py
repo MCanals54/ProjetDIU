@@ -47,10 +47,10 @@ def message1() :
 def message2() :
     print(" vous ne pouvez pas connaitre les destinations d'une étoile non découverte ")
 def message3() :
-    print(" Je vois que tu as fait le tour de la question et que tu n'a toujours pas trouvé Terminus")
+    print(" Je vois que tu as fait le tour de la question et que tu n'a toujours \n pas trouvé Terminus")
     print(" La planète qui abrite la fondation est un secret bien gardé.")
     print(" Je vais te donner une indication : ")
-    print(" Aller sur Terminus nécessite au minimum 6 étapes")
+    print(" Aller sur Terminus depuis Trantor nécessite au minimum 6 étapes")
 def message4() :
     print(" Le parcours pour aller sur Terminus est incorrect")
 def message5() :
@@ -62,19 +62,23 @@ conseil_a_donner = message1
 etoiles = set (galaxie.keys())
 
 def destinations(etoile) :
+    global conseil_a_donner
     if etoile in etoiles :etoiles.remove(etoile)
+    if etoiles == set() :
+        conseil_a_donner = message3
     if etoile in visites :
         voisins = galaxie[etoile]
-        for star in voisins : visites.add(star)
-        if etoiles == set() : conseil_a_donner = message3
+        for star in voisins : visites.add(star)       
         return voisins
-
-    message2()
+    message2()  # Tentative sur une etoile non encore visitée
 
 def verifie_parcours(parcours) :
-    if len(parcours) == 0 : return False
+    if len(parcours) == 0 :
+        message4() 
+        return False
 
     if parcours[0] != "A" or parcours[-1] !="U" :
+        message4() 
         return False
 
     for i in range(len(parcours) -1 ) :
