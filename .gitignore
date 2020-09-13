@@ -1,0 +1,8 @@
+
+.ipynb_checkpoints/galaxie-checkpoint.py
+.ipynb_checkpoints/cours_partie1-checkpoint.ipynb
+.ipynb_checkpoints/sommaire-checkpoint.ipynb
+.ipynb_checkpoints/exercices-checkpoint.ipynb
+.ipynb_checkpoints/activite1-checkpoint.ipynb
+*.pyc
+bootstrap.css
