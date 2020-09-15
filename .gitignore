@@ -7,3 +7,5 @@
 *.pyc
 bootstrap.css
 .ipynb_checkpoints/algo_digraphes-checkpoint.ipynb
+.ipynb_checkpoints/cours_graphes_simples-checkpoint.ipynb
+.ipynb_checkpoints/exemples_digraphes-checkpoint.ipynb
