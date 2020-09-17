@@ -42,5 +42,5 @@ digraph G {
     O->U;
     U->V->U;
     L->R->S->L;
-    r->V;
+    R->V;
 }
