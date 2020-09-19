@@ -1,0 +1,23 @@
+graph G {
+
+  node  [label="(4,3)"] I;
+  node [label="(2,4)"] J;
+  node [label="(3,5)"] K;
+  
+  node [label="(5,5)"] M;
+  node [label="(6,4)"] N;
+  node [label="(6,2)"] O;
+  node [label="(5,1)"] P;
+  node [label="(3,1)"] Q;
+  node [label="(2,2)"] L;
+  
+  I--J;
+  I--K;
+  I--L;
+  I--M;
+  I--N;
+  I--O;
+  I--P;
+  I--Q;
+  
+}

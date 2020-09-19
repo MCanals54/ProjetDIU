@@ -1,0 +1,46 @@
+digraph G {
+
+   
+    node  [pos = "2.0,0!?"] B;
+    node  [pos = "0,-2!?"] C;
+    node [pos = "0.0,0.0!?"] A ;
+     node [pos = "0.0,2.0!?"] E ;
+    node [pos = "-2.0,0.0!?"] D ;
+    node [pos = "1.0,1.0!?"] F ;
+    node [pos = "-1.0,1.0!?"] I ;
+    node [pos = "1.0,-1.0!?"] G ;
+    node [pos = "-1.0,-1.0!?"] H ;
+    node [pos = "0.0,4.0!?"] M ;   
+    node [pos = "0.0,6.0!?"] T ;   
+    node [pos = "4.0,0.0!?"] J ;   
+    node [pos = "-4.0,0.0!?"] L ;   
+    node [pos = "0.0,-4.0!?"] K;   
+    node [pos = "5.0,1.0!?"] N;   
+    node [pos = "6.0,-0.0!?"] O; 
+    node [pos = "1.0,-5.0!?"] P;
+    node [pos = "-1.0,-5.0!?"] Q;
+    node [pos = "1.0,-6.0!?"] U;
+    node [pos = "-1.0,-6.0!?"] V;
+    
+    node [pos = "-6.0,0.0!?"] S;
+    node [pos = "-5.0,-1.0!?"] R;
+    A ->B -> G-> A;
+    B -> F -> A -> E -> I -> A ;
+    E -> F;
+    A -> H -> D -> I;
+    H-> C-> G;
+   A -> D;
+   A -> C;
+    E->M-> E;
+    M->T->M;
+    J->B;
+    D-> L-> D;
+    C->K->C;
+    K->J->M->L->K;
+    K->P->Q->K;
+    J->N->O->J;
+    O->U;
+    U->V->U;
+    L->R->S->L;
+    R->V;
+}
